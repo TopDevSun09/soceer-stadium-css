@@ -1410,10 +1410,89 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="row">
-					<div class="col-md-12">
-						jjklrjrkewoaprewrokltrdkgtlrktrejoi
+					<div class="col-md-12 football-board">
+						<div class="football-board-top">Lineups</div>
+						<div class="football-board-center">
+							<svg width="1150" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+								<title>PitchB</title>
+								<!--         -->
+								<!--                  -->
+								<!--      -->
+								<!--         -->
+								<!--      -->
+								<!--         -->
+								<!--       -->
+								<!--         -->
+								<g>
+								<title>Layer 1</title>
+								<rect id="svg_1" fill="green" height="720" width="1150"/>
+								<ellipse fill="#FF0000" stroke="#ff0000" stroke-width="5" cx="576.5" cy="437" rx="9" ry="9" id="svg_20"/>
+								<ellipse fill="#007fff" stroke="#007fff" stroke-width="5" cx="663.5" cy="360" rx="9" ry="9" id="svg_36"/>
+								<path id="svg_2" fill="green" stroke-width="2" stroke="white" d="m578,14l-525,0l0,680l1050,0l0,-680l-525,0l0,680l0,-680z"/>
+								<ellipse fill="#FF0000" stroke="#ff0000" stroke-width="5" cx="576.5" cy="355" rx="9" ry="9" id="svg_8"/>
+								<circle id="svg_3" fill-opacity="0" stroke-width="2" stroke="white" r="91.5" cy="350" cx="573" fill="black"/>
+								<circle id="svg_5" fill="white" stroke="white" r="2" cy="360" cx="160"/>
+								<circle id="svg_6" fill="white" stroke="white" r="2" cy="360" cx="990"/>
+								<path id="svg_9" fill-opacity="0" stroke-width="2" stroke="white" d="m50,269.39999l55,0l0,182.20002l-55,0l0,-182.20002z"/>
+								<path id="svg_10" fill-opacity="0" stroke-width="2" stroke="white" d="m1100,269.39999l-55,0l0,182.20002l55,0l0,-182.20002z"/>
+								<path fill="black" id="svg_11" fill-opacity="0" stroke-width="2" stroke="white" d="m51,182.39977l166,0l0,340.20045l-166,0l0,-340.20045z"/>
+								<path fill="black" id="svg_12" fill-opacity="0" stroke-width="2" stroke="white" d="m1102,188.39977l-165,0l0,343.20045l165,0l0,-343.20045z"/>
+								<path id="svg_13" fill="green" stroke-width="2" stroke="white" d="m218,286.875a91.5,91.5 0 0 1 0,146.25l0,-146.25z"/>
+								<path id="svg_14" fill="green" stroke-width="2" stroke="white" d="m935,286.875a91.5,91.5 0 0 0 0,146.25l0,-146.25z"/>
+								<path id="svg_15" fill-opacity="0" stroke-width="2" stroke="white" d="m50,30a10,10 0 0 0 10,-10l-10,0l0,10z"/>
+								<path id="svg_16" fill-opacity="0" stroke-width="2" stroke="white" d="m60,700a10,10 0 0 0 -10,-10l0,10l10,0z"/>
+								<path id="svg_17" fill-opacity="0" stroke-width="2" stroke="white" d="m1100,690a10,10 0 0 0 -10,10l10,0l0,-10z"/>
+								<path id="svg_18" fill-opacity="0" stroke-width="2" stroke="white" d="m1090,20a10,10 0 0 0 10,10l0,-10l-10,0z"/>
+								<ellipse fill="#FF0000" stroke="#ff0000" stroke-width="5" cx="574.5" cy="99" rx="9" ry="9" id="svg_19"/>
+								<ellipse fill="#FF0000" stroke="#ff0000" stroke-width="5" cx="444.5" cy="541" rx="9" ry="9" id="svg_21"/>
+								<ellipse fill="#FF0000" stroke="#ff0000" stroke-width="5" cx="443.5" cy="177" rx="9" ry="9" id="svg_22"/>
+								<ellipse fill="#FF0000" stroke="#ff0000" stroke-width="5" cx="362.5" cy="358" rx="9" ry="9" id="svg_23"/>
+								<ellipse fill="#FF0000" stroke="#ff0000" stroke-width="5" cx="215.5" cy="477" rx="9" ry="9" id="svg_24"/>
+								<ellipse fill="#FF0000" stroke="#ff0000" stroke-width="5" cx="220.5" cy="600" rx="9" ry="9" id="svg_25"/>
+								<ellipse fill="#FF0000" stroke="#ff0000" stroke-width="5" cx="216.5" cy="106" rx="9" ry="9" id="svg_26"/>
+								<ellipse fill="#ffff00" stroke="#ffff00" stroke-width="5" cx="53.5" cy="364" rx="9" ry="9" id="svg_27"/>
+								<ellipse fill="#FF0000" stroke="#ff0000" stroke-width="5" cx="216" cy="237" id="svg_7" rx="9" ry="9"/>
+								<ellipse fill="#FF0000" stroke="#ff0000" stroke-width="5" cx="575.5" cy="441" rx="9" ry="9" id="svg_35"/>
+								<ellipse fill="#007fff" stroke="#007fff" stroke-width="5" cx="672.5" cy="98" rx="9" ry="9" id="svg_37"/>
+								<ellipse fill="#007fff" stroke="#007fff" stroke-width="5" cx="663.5" cy="355" rx="9" ry="9" id="svg_38"/>
+								<ellipse fill="#007fff" stroke="#007fff" stroke-width="5" cx="660.5" cy="595" rx="9" ry="9" id="svg_39"/>
+								<ellipse fill="#007fff" stroke="#007fff" stroke-width="5" cx="716.5" cy="175" rx="9" ry="9" id="svg_40"/>
+								<ellipse fill="#007fff" stroke="#007fff" stroke-width="5" cx="787.5" cy="357" rx="9" ry="9" id="svg_41"/>
+								<ellipse fill="#007fff" stroke="#007fff" stroke-width="5" cx="731.5" cy="525" rx="9" ry="9" id="svg_42"/>
+								<ellipse fill="#007fff" stroke="#007fff" stroke-width="5" cx="940.5" cy="601" rx="9" ry="9" id="svg_43"/>
+								<ellipse fill="#007fff" stroke="#007fff" stroke-width="5" cx="937.5" cy="238" rx="9" ry="9" id="svg_44"/>
+								<ellipse fill="#007fff" stroke="#007fff" stroke-width="5" cx="936.5" cy="488" rx="9" ry="9" id="svg_45"/>
+								<ellipse fill="#007fff" stroke="#007fff" stroke-width="5" cx="935.5" cy="101" rx="9" ry="9" id="svg_46"/>
+								<ellipse fill="#7f00ff" stroke="#7f00ff" stroke-width="5" cx="1100.5" cy="354" rx="9" ry="9" id="svg_47"/>
+								<text fill="#ff00ff" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="572" y="520" id="svg_48" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve">At Kickoff</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="217" y="91" id="svg_49" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve">Left D</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="215" y="214" id="svg_50" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve">Left Center D</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="213" y="451" id="svg_51" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve">Right Center D</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="219" y="575" id="svg_52" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve">Right D</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="434.92307" y="345.77805" id="svg_53" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve" transform="matrix(0.611765,0,0,0.82233,95.9294,49.164) ">Central Defensive Mid</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="442" y="151" id="svg_54" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve">Left Mid</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="444" y="517" id="svg_55" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve">Right Mid</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="572" y="73" id="svg_56" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve">Left Forward</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="643.19192" y="349.83333" id="svg_57" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve" transform="matrix(0.596386,0,0,0.705882,190.91,89.7059) ">Center Forward</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="529" y="413" id="svg_58" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve">Right Forward</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="686" y="131" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve" id="svg_59">Right Forward</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="659" y="575" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve" id="svg_60">Left Forward</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="643.19192" y="349.83333" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve" transform="matrix(0.596386,0,0,0.705882,282.91,142.706) " id="svg_61">Center Forward</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="737" y="501" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve" id="svg_62">Left Mid</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="1129.63425" y="351.85833" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve" transform="matrix(0.611765,0,0,0.82233,95.9294,49.164) " id="svg_63">Central Defensive Mid</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="716" y="221" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve" id="svg_64">Right Mid</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="947" y="636" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve" id="svg_65">Left D</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="939" y="535" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve" id="svg_66">Left Center D</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="938" y="218" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve" id="svg_67">Right Center D</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="943" y="80" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve" id="svg_69">Right D</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="54" y="401" id="svg_70" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve">Goalie</text>
+								<text fill="#000000" stroke="white" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="1101" y="389" font-size="24" font-family="Arial" text-anchor="middle" xml:space="preserve" id="svg_71">Goalie</text>
+								</g>
+							</svg>
+						</div>
+						<div class="football-board-bottom"></div>
 					</div>
 				</div>
             </div>
