@@ -1411,11 +1411,56 @@
 					</div>
 				</div>
 
+				<style>
+					.football-board {
+						background-color: white;
+						margin-top: 30px;
+						margin-bottom: 30px;
+						padding: 0;
+						width: 100%;
+						height: 810px;
+						display: block;
+						justify-content: center;
+						align-items: center;
+					}
+
+					.football-board-top {
+						background-image: linear-gradient(100deg, #9F6C0A, #E0B04F);
+						margin: 0;
+						color: white;
+						font-size: 16px;
+						padding-left: 10px;
+						width: 100%;
+						height: 35px;
+						display: flex;
+						align-items: center;
+					}
+
+					.football-board-center {
+						background-color: #309B50;
+						margin-left: 10px;
+						margin-top: 10px;
+						margin-bottom: 10px;
+						width: 98.4%;
+						height: 720px;
+						border-radius: 5px;
+					}
+
+					.football-board-bottom {
+						background-image: linear-gradient(100deg, #9F6C0A, #E0B04F);
+						margin-left: 10px;
+						margin-right: 10px;
+						width: 98.4%;
+						height: 35px;
+						border-radius: 5px 5px 0px 0px;
+					}
+				</style>
+
 				<div class="row">
 					<div class="col-md-12 football-board">
 						<div class="football-board-top">Lineups</div>
 						<div class="football-board-center">
-							<svg width="1150" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+							<svg width="1150" height="720" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
 								<title>PitchB</title>
 								<!--         -->
 								<!--                  -->
