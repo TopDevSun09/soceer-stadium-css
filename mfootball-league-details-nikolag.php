@@ -50,8 +50,8 @@
             <div class="about" style="width: 70%;">
                 <h3>Italian Serie A</h3>
                 <div class="region">
-                    <img alt="" class="le_img_c" src="https://www.a8livetv.com/api/images/football/country/logo/italy.svg">
-                    Italy / 0
+                    <img alt="" class="le_img_c" src="https://www.a8livetv.com/api/images/football/country/logo/england.svg">
+                    England / 0
                     <!-- <img alt="" class="le_img_c" src="includes/images/football/country/logo/<?=strtolower($infoRow->league_countryEn)?>.svg">
                     <b class="le_countryname"><?=$infoRow->league_countryEn?></b> -->
                 </div>
@@ -220,9 +220,14 @@
 
     <div id="Standing" class="tabcontent" style="display:none;">
         <div class="league-group">
-            <div class="group-title">
-                <img src="" />
-                <h3>Group A</h3>
+            <div style="padding: 20 10 10 10; background-color: lightgrey;">
+                <button type="button" class="btn btn-warning" style="border: none;  margin-left: 10px;">All</button>
+                <button type="button" class="btn btn-default" style="border: none;  margin-left: 10px;">Home</button>
+                <button type="button" class="btn btn-default" style="border: none;  margin-left: 10px;">Away</button>
+            </div>
+            <div class="group-title" style="display: flex; align-items:center;">
+                <img src="https://www.a8livetv.com/api/images/football/country/logo/england.svg" />
+                <h3>League</h3>
             </div>
             <div class="league-table-header">
                 <div class="index">#</div>
