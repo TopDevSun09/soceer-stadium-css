@@ -1,0 +1,181 @@
+<html device="pc">
+
+<head>
+
+    <title><?= $_SERVER['SERVER_NAME'] ?> :: LIVE TV | Football | Basketball | Horse | ESport</title>
+
+    <!-- CSS -->
+    <!-- CSS -->
+    <!-- CSS -->
+    
+    <link rel="stylesheet" href="includes/mvc-theme/<?= $layout ?>/bootstrap.min.css?ver=<?= time() ?>">
+    <link rel="stylesheet" href="includes/mvc-theme/<?= $layout ?>/awesomefont.min.css?ver=<?= time() ?>"  />
+
+    <link rel="stylesheet" href="includes/mvc-theme/<?= $layout ?>/all.css?ver=<?= time() ?>">
+    <link rel="stylesheet" href="includes/mvc-theme/<?= $layout ?>/football.css?ver=<?= time() ?>">
+
+
+
+    <!-- JAVASCRIPT -->
+    <!-- JAVASCRIPT -->
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="includes/js/jquery.js?ver=<?= time() ?>"></script>
+    <script type="text/javascript" src="includes/js/slider.js?ver=<?= time() ?>"></script>
+
+    <!-- FONT -->
+    <!-- FONT -->
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+    <?php
+
+    // THEME CSS
+    // THEME CSS
+    // THEME CSS
+    include("includes/mvc-theme/" . $layout . "/" . $_SERVER['SERVER_NAME'] . "/custom-css.php");
+
+
+    ?>
+
+
+    
+
+</head>
+
+<body>
+
+    <style>
+        .header-main ,.block-sub{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+			
+			 
+        }
+		
+		
+		
+		
+    </style>
+
+    <!-- HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER -->
+    <!-- HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER -->
+    <!-- HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER -->
+    <div class="header">
+        <div class="container p-0">
+            <div class="header-main">
+                <div>
+                    <img src="includes/mvc-theme/<?= $layout ?>/<?=$_SERVER['SERVER_NAME']?>/images/brand-logo.png" alt="<?=$_SERVER['SERVER_NAME']?>" style="height:53px;margin:5px 0px 2px 0px;">
+                </div>
+                <div class='block-sub'>
+                    <div class="sign-in">
+                        <div class="block-icon">
+                            <i class="fa-sharp fa-solid fa-user-tie"></i>
+                        </div>
+                        <p>Sign In</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN -->
+    <!-- CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN -->
+    <!-- CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN -->
+    <div class="panel_main">
+
+        <?php
+
+
+        if ($pageURL == "" || $pageURL == "football-main" || $pageURL == "basketball-main" || $pageURL == "horse-main" || $pageURL == "esport-main") {
+
+        ?>
+
+
+
+            <div class="panel_left">
+
+           
+			<div class="panel_left_box">
+               
+                    <a href="?filterLive=LIVE">Live</a><br>
+                    <a href="?filterLive=END">End Score</a><br>
+                    <a href="../football-league-standing">League Standing</a><br>
+               
+				</div>
+
+                <div class="panel_left_box">                  
+                    <h2>Popular</h2>
+                    <?php
+                        
+                        $qryRowLeague = tep_query("SELECT * FROM nano_popular_league WHERE 1=1 ORDER BY league_update_status ASC");
+                        
+                        while($infoRowLeague = tep_fetch_object($qryRowLeague)){
+                            echo "
+	                        <div>
+		                        <img src=\"includes/images/football/league/logo/" . $infoRowLeague->league_logo ."\" style=\"width: 25px;height: 25px;border-radius: 50%;\" />
+		                        ".$infoRowLeague->league_name."
+	                        </div>";
+                        }
+                        
+                    ?>
+                </div>
+
+                <div class="panel_left_box">
+                    <h2>Recommended</h2>
+                    <?php
+                        $qryRow = tep_query("SELECT * FROM nano_contents WHERE content_type = 'Recommend Article' AND organization_id = '".tep_input($infoOrganization->organization_id)."' ORDER BY content_id DESC LIMIT 0, 2"); 
+                        while ($infoRow = tep_fetch_object($qryRow)){
+                            echo "
+                            <div>
+                                <div style=\"float:left;\">
+                                    <img style=\"border:1px solid black; width:100px; \" />
+                                </div>
+                                <div style=\"float:left;\">
+                                ".substr($infoRow->content_title, 0, 30)." [..]
+                                </div>
+                                <div style=\"clear:both\"></div>
+                            </div>";
+                        }
+                    ?>
+                </div>
+
+                <div class="panel_left_box">
+                    <h2>Other Leagues [A-Z]</h2>
+                    <?php
+                        
+                        $qryRowLeague = tep_query("SELECT * FROM nano_leagues_list WHERE 1=1 ORDER BY league_countryEn ASC");
+                        
+                        echo "<li>";
+
+                        $strCountry = "";
+
+                        while($infoRowLeague = tep_fetch_object($qryRowLeague)){
+
+                            if($strCountry != $infoRowLeague->league_countryEn){
+                                $strCountry = $infoRowLeague->league_countryEn;
+                                echo "<hr><u><b>".$infoRowLeague->league_countryEn."</b></u><br>";
+                            }
+                            
+                            echo " + ".$infoRowLeague->league_nameEn."<br>";
+
+
+                        }
+                        
+                    ?>
+                </div>
+
+
+
+            </div>
+
+
+        <?php
+
+        }
+
+        ?>
