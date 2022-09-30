@@ -52,7 +52,7 @@ if( $arrSettingData['FORCE_LOGIN'] == "1" && $getMember->member_id == ""){
 <?php
 if( strpos('='.$pageURL, 'football')>=1 ){
 ?>
-					<style>
+					<!-- <style>
 						.football-board {
 							background-color: white;
 							margin-top: 30px;
@@ -264,7 +264,7 @@ if( strpos('='.$pageURL, 'football')>=1 ){
 								<div class="football-board-bottom"></div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 
 	<div class="figure" style="display: flex;">
     	<div class="figure-title">Figure Legends:</div>
