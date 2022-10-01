@@ -219,17 +219,34 @@
     </div>
 
     <div id="Standing" class="tabcontent" style="display:none;">
+        <style>
+            .flex-center {
+                display: flex;
+                align-items: center;
+                /* justify-content: center; */
+            }
+
+            li > div {
+                border-bottom: 1px solid lightgray; 
+                height:40px;
+            }
+
+            li > div > div {
+                height: 100%;
+            }
+        </style>
         <div class="league-group">
             <div style="padding: 20 10 10 10; background-color: lightgrey;">
                 <button type="button" class="btn btn-warning" style="border: none;  margin-left: 10px;">All</button>
                 <button type="button" class="btn btn-default" style="border: none;  margin-left: 10px;">Home</button>
                 <button type="button" class="btn btn-default" style="border: none;  margin-left: 10px;">Away</button>
             </div>
-            <div class="group-title" style="display: flex; align-items:center;">
+            <div class="group-title flex-center">
                 <img src="https://www.a8livetv.com/api/images/football/country/logo/england.svg" />
                 <h3>League</h3>
             </div>
-            <div class="league-table-header">
+
+            <div class="league-table-header flex-center">
                 <div class="index">#</div>
                 <div class="header-team">Team</div>
                 <div class="header-p">P</div>
@@ -238,35 +255,31 @@
                 <div class="header-l">L</div>
                 <div class="header-goals">Goals</div>
                 <div class="header-pts">PTS</div>
-
-
-
             </div>
             <ul class="league-table-content">
                 <li>
-                    <div class="team-score">
+                    <div class="team-score flex-center">
                         <div class="team-index">1</div>
                         <div class="header-team">
-                            <div class="team-name">
-                                <img src="" />
+                            <div class="team-name flex-center">
+                                <img style="margin: 3px;" src="https://www.a8livetv.com/api/images/football/country/logo/dr%20congo.svg" />
                                 <span>Napoli</span>
                             </div>
-
                         </div>
-                        <div class="team-p">2</div>
+                        <div class="team-p" style="text-align: center;">2</div>
                         <div class="team-w">2</div>
                         <div class="team-d">0</div>
                         <div class="team-l">0</div>
-                        <div class="team-goals">7:1</div>
-                        <div class="team-pts">6</div>
+                        <div class="team-goals" style="margin-left: 1px;">7:1</div>
+                        <div class="team-pts" style="margin-left: 1px;">6</div>
                     </div>
                 </li>
                 <li>
-                    <div class="team-score">
+                    <div class="team-score flex-center" style="border-bottom: 1px solid lightgray;">
                         <div class="team-index">2</div>
                         <div class="header-team">
-                            <div class="team-name">
-                                <img src="" />
+                            <div class="team-name flex-center">
+                                <img style="margin: 3px;" src="https://www.a8livetv.com/api/images/football/country/logo/czech%20republic.svg" />
                                 <span>Manchester United</span>
                             </div>
 
@@ -275,15 +288,11 @@
                         <div class="team-w">2</div>
                         <div class="team-d">2</div>
                         <div class="team-l">0</div>
-                        <div class="team-goals">10:1</div>
-                        <div class="team-pts">9</div>
+                        <div class="team-goals" style="margin-left: 1px;">10:1</div>
+                        <div class="team-pts" style="margin-left: 1px;">9</div>
                     </div>
                 </li>
-
-
-
             </ul>
-
         </div>
     </div>
 
