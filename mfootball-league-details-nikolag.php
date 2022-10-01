@@ -42,13 +42,13 @@
             </div>
         </div>
 
-        <div class="league-details-title">
-            <div class="league-image">
-                <img src="https://www.a8livetv.com/api/images/football/league/logo/164577482086.png" />
+        <div class="league-details-title" style="display: flex; align-items:center; margin-top:20px;">
+            <div class="league-image" style="margin-left: 60px;width:8%;">
+                <img style="width: 100%;" src="https://www.a8livetv.com/api/images/football/league/logo/164577482086.png" />
             </div>
 
-            <div class="about" style="width: 70%;">
-                <h3>Italian Serie A</h3>
+            <div class="about" style="width: 70%; margin-left:15px;">
+                <h3 style="color: white;">Italian Serie A</h3>
                 <div class="region">
                     <img alt="" class="le_img_c" src="https://www.a8livetv.com/api/images/football/country/logo/england.svg">
                     England / 0
@@ -228,11 +228,11 @@
 
             li > div {
                 border-bottom: 1px solid lightgray; 
-                height:40px;
             }
 
             li > div > div {
-                height: 100%;
+                height: 40px;
+                padding-top: 12px;
             }
         </style>
         <div class="league-group">
@@ -260,7 +260,7 @@
                 <li>
                     <div class="team-score flex-center">
                         <div class="team-index">1</div>
-                        <div class="header-team">
+                        <div class="header-team" style="padding: 0;">
                             <div class="team-name flex-center">
                                 <img style="margin: 3px;" src="https://www.a8livetv.com/api/images/football/country/logo/dr%20congo.svg" />
                                 <span>Napoli</span>
@@ -277,12 +277,11 @@
                 <li>
                     <div class="team-score flex-center" style="border-bottom: 1px solid lightgray;">
                         <div class="team-index">2</div>
-                        <div class="header-team">
+                        <div class="header-team" style="padding: 0;">
                             <div class="team-name flex-center">
                                 <img style="margin: 3px;" src="https://www.a8livetv.com/api/images/football/country/logo/czech%20republic.svg" />
                                 <span>Manchester United</span>
                             </div>
-
                         </div>
                         <div class="team-p">2</div>
                         <div class="team-w">2</div>
@@ -296,53 +295,65 @@
         </div>
     </div>
 
-    <div id="Matches" class="tabcontent" style="display:none;">
-        <div class="match-live">
+    <div id="Matches" class="tabcontent">
+        <style>
+            li > div > div > div {
+                margin: 0 !important;
+            }
+
+            li > div > div {
+                margin: 0 !important;
+            }
+
+            img {
+                margin: 0 !important;
+            }
+
+            .flex-col {
+                flex-direction: column; 
+                justify-content:center;
+            }
+        </style>
+        <div class="match-live" style="border:none;">
             <div class="match-title">
-                <div class="match-title-content">
-                    <img src="/includes/mvc-theme/mobile/wc.a8livetv.com/images/argentina.svg" />
-                    <span>Football > Ecuador : Primera Division de Ecuador</span>
+                <div class="match-title-content" style="color: lightgray;">
+                    <span>League  : 35</span>
                 </div>
             </div>
             <ul style="list-style: none; padding: 0px; margin: 0px;">
                 <li>
-                    <div class="match-item-left">
-                        <div class="match-time">
-                            <p style="margin-top: 15px; margin-left: 5px;">08/03</p>
-                            <p style="margin-left: 5px;">FT</p>
+                    <div class="match-item-left flex-center" style="border:1px solid lightgray; border-left:0; border-top:0;">
+                        <div style="width: 40%;">
+                            <img src="./Stars Clipart 954.jpg" alt="">
                         </div>
-
+                        <div class="match-time flex-col flex-center">
+                            <p style="color:gray">08/03</p>
+                            <p style="color:red;">FT</p>
+                        </div>
                     </div>
-                    <div class="match-item-center">
-                        <div class="match-club">
+                    <div class="match-item-center" style="border:1px solid lightgray; border-left:0; border-top:0;">
+                        <div class="match-club" style="font-size: 14px;">
                             <div class="match-club-one">
-                                <img src="/includes/mvc-theme/mobile/wc.a8livetv.com/images/atletico.jpeg" />
-                                <p>Argentinos Juniors</p>
+                                <img src="https://www.a8livetv.com/api/images/football/country/logo/argentina.svg" />
+                                <p><b>Argentinos Juniors</b></p>
                             </div>
                             <div class="match-club-two">
-                                <img src="/includes/mvc-theme/mobile/wc.a8livetv.com/images/atletico.jpeg" />
-                                <p>Atletico Tucuman</p>
+                                <img src="https://www.a8livetv.com/api/images/football/country/logo/australia.svg" />
+                                <p><b>Atletico Tucuman</b></p>
                             </div>
-
-
                         </div>
                         <div class="match-club-icon">
                             <div class="match-club-inner">
-                                <img class="team" src="/includes/mvc-theme/mobile/wc.a8livetv.com/images/team.png"></img>
+                                <img class="team" style="width: 1.8rem; height: 1.8rem;" src="https://www.a8livetv.com/themes/a8livetv/image/lineups.png"></img>
                             </div>
                         </div>
                     </div>
-                    <div class="match-item-right">
-                        <div class="match-club-one">0</div>
-                        <div class="match-club-two">1</div>
+                    <div class="match-item-right" style="border:none; border-bottom:1px solid lightgray;width:10%;">
+                        <div class="match-club-one" style="color: red;">0</div>
+                        <div class="match-club-two" style="color: red;">1</div>
                     </div>
-
                 </li>
-
-
-
             </ul>
-
             <!-- end of div -->
         </div>
     </div>
