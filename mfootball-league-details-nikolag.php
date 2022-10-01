@@ -299,6 +299,8 @@
         <style>
             li > div > div > div {
                 margin: 0 !important;
+                margin-top: 5px;
+                margin-bottom: 5px;
             }
 
             li > div > div {
@@ -312,6 +314,10 @@
             .flex-col {
                 flex-direction: column; 
                 justify-content:center;
+            }
+
+            li > div > div > div > img {
+                margin-top: 3px;
             }
         </style>
         <div class="match-live" style="border:none;">
@@ -331,15 +337,15 @@
                             <p style="color:red;">FT</p>
                         </div>
                     </div>
-                    <div class="match-item-center" style="border:1px solid lightgray; border-left:0; border-top:0;">
-                        <div class="match-club" style="font-size: 14px;">
-                            <div class="match-club-one">
+                    <div class="match-item-center flex-center" style="align-items:center;justify-content:space-between;border:1px solid lightgray; border-left:0; border-top:0;">
+                        <div class="match-club flex-center flex-col" style="font-size: 14px;">
+                            <div class="match-club-one" style="display:flex; align-items:center;">
                                 <img src="https://www.a8livetv.com/api/images/football/country/logo/argentina.svg" />
-                                <p><b>Argentinos Juniors</b></p>
+                                <span><b>Argentinos Juniors</b></span>
                             </div>
-                            <div class="match-club-two">
+                            <div class="match-club-two" style="display:flex; align-items:center;">
                                 <img src="https://www.a8livetv.com/api/images/football/country/logo/australia.svg" />
-                                <p><b>Atletico Tucuman</b></p>
+                                <span><b>Atletico Tucuman</b></span>
                             </div>
                         </div>
                         <div class="match-club-icon">
