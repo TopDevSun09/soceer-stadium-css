@@ -1,168 +1,293 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mFootball-header-dropdown</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
 
-  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <title>
+    <?=$infoOrganization->organization_name?> :: LIVE TV | Football | Basketball | Horse | ESport
+  </title>
+
+  <meta charset="utf-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover" />
+
+
+
+  <link rel="stylesheet" href="includes/mvc-theme/<?=$layout?>/football.css?ver=<?=time()?>">
+
+  <link rel="stylesheet" href="includes/mvc-theme/<?=$layout?>/mall.css?ver=<?=time()?>">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <?php
+
+    // THEME CSS
+    // THEME CSS
+    // THEME CSS
+	echo "<link rel=\"stylesheet\" href=\"includes/mvc-theme/".$layout."/".$infoOrganization->organization_domain."/custom-css.php\">";
+	echo "<link rel=\"shortcut icon\" type=\"image/jpg\" href=\"includes/mvc-theme/".$layout."/".$infoOrganization->organization_domain."/images/favicon.ico\" />";
+
+	?>
+
+  <script src="https://kit.fontawesome.com/e0ea3a0915.js" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="includes/js/jquery.js"></script>
+
+
+
 </head>
 
 <body>
-  <style>
-    :root {
-      --left: -140px;
-      --top: 70px;
-    }
-
-    .menu-bar-nikola {
-      background-color: black;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-    }
-
-    #dropdown-menu-ul-nikola {
-      background-color: white;
-      transform: translate(var(--left), var(--top)) !important;
-      width: 440px !important;
-      padding: 15px 5px 15px 5px;
-      border-radius: 8px;
-    }
-
-    #dropdown-menu-ul-nikola>li {
-      background-color: #5A5A5A;
-      border-radius: 5px;
-      margin: 3px 10px 3px 10px;
-      display: flex;
-      align-items: center;
-      height: 60px;
-    }
-
-    #dropdown-menu-ul-nikola>li>* {
-      pointer-events: none;
-    }
-
-    #dropdown-menu-ul-nikola>li>img {
-      width: 15% !important;
-      height: 60% !important;
-      margin-left: 5px;
-    }
-
-    #dropdown-menu-ul-nikola>li>button {
-      text-transform: uppercase;
-      color: white !important;
-      font-size: 18px;
-      font-weight: 500;
-    }
-
-    #dropdown-menu-ul-nikola>li>div {
-      font-weight: 500;
-      font-size: 18px;
-    }
-
-    #dropdown-menu-ul-nikola>li>div :first-child {
-      color: #cf4e52;
-    }
-
-    .dropdown-button-nikola {
-      background-color: transparent;
-      border-color: white;
-      border-width: 0.5px;
-      color: white;
-      border-radius: 5px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      font-weight: 650;
-      font-size: 21px;
-      padding: 2px 20px 2px 20px;
-      border-width: thin;
-      border-color: lightgray;
-    }
-
-    .dropdown-menu-board-nikola {
-      background-color: white;
-    }
-
-    .dropdown-item-right-nikola {
-      background-color: #ADABAC;
-      border-radius: 10px;
-      margin: 3px 15px 3px 15px;
-      padding: 3px 15px 3px 15px;
-      width: 35%;
-      display: flex;
-      justify-content: center;
-    }
-  </style>
 
 
-  <div class="menu-bar-nikola">
-    <div>ddd</div>
-    <div class="dropdown" id="menu-bar-droparrow-nikoa">
-      <button class="dropdown-toggle dropdown-button-nikola" id="navbarDarkDropdownMenuLink" role="button"
-        data-bs-toggle="dropdown" aria-expanded="false">
-        Football
-      </button>
-      <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-board-nikola" id="dropdown-menu-ul-nikola"
-        aria-labelledby="navbarDarkDropdownMenuLink">
-        <li><img class="dropdown-item" src="./assets/images/logo.png" /><button class="dropdown-item">Football</button>
-          <div class="dropdown-item dropdown-item-right-nikola"><span>9</span>/<span>255</span></div>
-        </li>
-        <li><img class="dropdown-item" src="./assets/images/logo.png" /><button
-            class="dropdown-item">Basketball</button>
-          <div class="dropdown-item dropdown-item-right-nikola"><span>51</span>/<span>45</span></div>
-        </li>
-        <li><img class="dropdown-item" src="./assets/images/logo.png" /><button class="dropdown-item">Horse</button>
-          <div class="dropdown-item dropdown-item-right-nikola"><span>0</span>/<span>0</span></div>
-        </li>
-        <li><img class="dropdown-item" src="./assets/images/logo.png" /><button class="dropdown-item">Esport</button>
-          <div class="dropdown-item dropdown-item-right-nikola"><span>2</span>/<span>35</span></div>
-        </li>
-        <li><img class="dropdown-item" src="./assets/images/logo.png" /><button class="dropdown-item">Guide</button>
-          <div class="dropdown-item dropdown-item-right-nikola"><span>0</span>/<span>0</span></div>
-        </li>
-        <li><img class="dropdown-item" src="./assets/images/logo.png" /><button class="dropdown-item">News</button>
-          <div class="dropdown-item dropdown-item-right-nikola"><span>0</span>/<span>0</span></div>
-        </li>
-      </ul>
-    </div>
-    <div>ddd</div>
-  </div>
+  <div class="mobile_container">
 
-  <script>
-    $("#navbarDarkDropdownMenuLink").on("click", function () {
-      // let widthBtn = $('#menu-bar-droparrow-nikoa').width();
-      // let heightBtn = $('#menu-bar-droparrow-nikoa').height();
-      // let widthUl = $('#dropdown-menu-ul-nikola').width();
-      // $(':root').css("width", `${(widthBtn-widthUl)/2}px`);
-      // $(':root').css("height", `${heightBtn+10}px`);
-      var classList = $('#menu-bar-droparrow-nikoa').attr('class').split(/\s+/);
-      $.each(classList, function (index, item) {
-        if (item === 'dropdown') {
-          $("#menu-bar-droparrow-nikoa").removeClass("dropdown");
-          $("#menu-bar-droparrow-nikoa").addClass("dropup");
-          // $("#dropdown-menu-ul-nikola").fadeIn();
-          $("li:first-child").css("background-color", "#2B2B2B");
-          $("body").css("background-color", "lightgrey");
-        } else {
-          $("#menu-bar-droparrow-nikoa").removeClass("dropup");
-          $("#menu-bar-droparrow-nikoa").addClass("dropdown");
-          // $("#dropdown-menu-ul-nikola").fadeOut();
-          $("body").css("background-color", "white");
+
+
+    <!-- HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER -->
+    <!-- HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER -->
+    <!-- HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER -->
+    <div class="header menu-bar-nikola">
+
+      <div class="logo">
+        <img src="/includes/mvc-theme/mobile/<?=$infoOrganization->organization_domain?>/images/brand-logo.png" />
+      </div>
+
+      <style>
+        :root {
+          --left: -140px;
+          --top: 70px;
         }
-      });
-    });
-  </script>
 
-</body>
+        .menu-bar-nikola {
+          background-color: black;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+        }
 
-</html>
+        .dropdown-button-nikola {
+          background-color: transparent;
+          border-color: white;
+          border-width: 0.5px;
+          color: white;
+          border-radius: 5px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          text-transform: uppercase;
+          font-weight: 650;
+          font-size: 21px;
+          padding: 2px 20px 2px 20px;
+          border-width: thin;
+          border-color: lightgray;
+          width: 154px;
+          height: 37px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+        }
+
+        .dropdown-toggle::after {
+          display: none !important;
+        }
+
+        i {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          margin-left: 0.197917rem;
+          background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjQzcHgiIGhlaWdodD0iMzdweCIgdmlld0JveD0iMCAwIDQzIDM3IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MyAzNyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+ICA8aW1hZ2UgaWQ9ImltYWdlMCIgd2lkdGg9IjQzIiBoZWlnaHQ9IjM3IiB4PSIwIiB5PSIwIg0KICAgIGhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ3NBQUFBbENBUUFBQUJ4WHRnN0FBQUFCR2RCVFVFQUFMR1BDL3hoQlFBQUFDQmpTRkpODQpBQUI2SmdBQWdJUUFBUG9BQUFDQTZBQUFkVEFBQU9wZ0FBQTZtQUFBRjNDY3VsRThBQUFBQW1KTFIwUUEvNGVQekw4QUFBQUhkRWxODQpSUWZsQnhNVEZBa3p3M1lvQUFBQmpVbEVRVlJJeDYzV3ZXc0NNUmdHOE9jT0VSeUtSU2c0dUFuRnBhVlFjTEtybTV1em81UC9oSU00DQozaWE0T2RYWnpVMW9GNWM2T2xURVJVUVVwRGdJb3ZUcG9QYjBQcExjWGZJdVI4ano0eVVKUnd4KzRBMjZ4NmZCRjN6QjFJcis0aFVFDQoyOVE3Mm9SQjRBSGZ1TmZXNnc4ZXNUWUJyRkhYdUFWMXJBRVFCR01jYTlxQU1XTUV6eXhZMU1RV1Q5NkZCWHNhME41RnM5a3M5eEhSDQpQYk1YemI2eFUxZ1JEOHZDOVArYmR0MXhFYUhYQmU5czY1b0ZLeEhZeXJWMHl4b2Noa1NITlB4Wk1CK1N6ZDg2VGhic2hFQTdUc1hODQpwcmtOaUc2WmRpcnVYK0lTallBWHE0R2xhNDd1aW5NU29OY0o0MjdEaXdWTEFkaVNsK0ROZ24xRnRPK2Q5Mk56UENpZ0IrYUNzYUNsDQp3RnArYVg4MnlaVUVYVEVabkFXckVyYnFueFd4SmtjQ2RFUXpIQXNXQkd4QmxCU3pZTmNIN1lwek1qYkRuUWU2WTBhY2t6MlQ1bWg2DQp6RFl4bCtRb3F3Um5qbDVuVE1oU2NoWXNPOWl5UEtQQ2dvTXJkS0NTVUdPZmVUeWpSejdwWThIV21XMnByVmRsVTl5UTNEQ2xsd1ZyDQpKR3VxcTlYWkdOOVBqMHlWK2dQa3RWVWExenFWK2dBQUFDVjBSVmgwWkdGMFpUcGpjbVZoZEdVQU1qQXlNUzB3TnkweE9WUXhNVG95DQpNRG93T1Nzd09Eb3dNRU9Pb09vQUFBQWxkRVZZZEdSaGRHVTZiVzlrYVdaNUFESXdNakV0TURjdE1UbFVNVEU2TWpBNk1Ea3JNRGc2DQpNREF5MHhoV0FBQUFJSFJGV0hSemIyWjBkMkZ5WlFCb2RIUndjem92TDJsdFlXZGxiV0ZuYVdOckxtOXlaN3pQSFowQUFBQVlkRVZZDQpkRlJvZFcxaU9qcEViMk4xYldWdWREbzZVR0ZuWlhNQU1hZi91eThBQUFBWGRFVllkRlJvZFcxaU9qcEpiV0ZuWlRvNlNHVnBaMmgwDQpBRE0zV0o0TWV3QUFBQlowUlZoMFZHaDFiV0k2T2tsdFlXZGxPanBYYVdSMGFBQTBNK2dkbmlnQUFBQVpkRVZZZEZSb2RXMWlPanBODQphVzFsZEhsd1pRQnBiV0ZuWlM5d2JtYy9zbFpPQUFBQUYzUkZXSFJVYUhWdFlqbzZUVlJwYldVQU1UWXlOalkyTkRnd09ZSk9KZElBDQpBQUFSZEVWWWRGUm9kVzFpT2pwVGFYcGxBRFUzTWtKQzZCNmRvd0FBQUVaMFJWaDBWR2gxYldJNk9sVlNTUUJtYVd4bE9pOHZMMkZ3DQpjQzkwYlhBdmFXMWhaMlZzWXk5cGJXZDJhV1YzTWw4NVh6RTJNak01TVRFeU56RTVOamMwTnpjM1h6SXhYMXN3WFJ5OHVrVUFBQUFBDQpTVVZPUks1Q1lJST0iID48L2ltYWdlPg0KPC9zdmc+DQo=);
+          background-size: 100% 100%;
+          transition: transform 0.15s, -webkit-transform 0.15s;
+        }
+
+        i.rotate {
+          transform: rotate(180deg);
+        }
+
+        #dropdown-menu-ul-nikola {
+          background-color: white;
+          position: absolute !important;
+          transform: translate(var(--left), var(--top)) !important;
+          width: 440px !important;
+          padding: 15px 5px 15px 5px;
+          border-radius: 8px;
+        }
+
+        #dropdown-menu-ul-nikola>li {
+          background-color: #5A5A5A;
+          border-radius: 5px;
+          margin: 3px 10px 3px 10px;
+          display: flex;
+          align-items: center;
+          height: 60px;
+        }
+
+        #dropdown-menu-ul-nikola>li>* {
+          pointer-events: none;
+        }
+
+        #dropdown-menu-ul-nikola>li>img {
+          width: 15% !important;
+          height: 60% !important;
+          margin-left: 5px;
+        }
+
+        #dropdown-menu-ul-nikola>li>button {
+          text-transform: uppercase;
+          color: white !important;
+          font-size: 18px;
+          font-weight: 500;
+        }
+
+        #dropdown-menu-ul-nikola>li>div {
+          font-weight: 500;
+          font-size: 18px;
+        }
+
+        #dropdown-menu-ul-nikola>li>div :first-child {
+          color: #cf4e52;
+        }
+
+        .dropdown-menu-board-nikola {
+          background-color: white;
+        }
+
+        .dropdown-item-right-nikola {
+          background-color: #ADABAC;
+          border-radius: 10px;
+          margin: 3px 15px 3px 15px;
+          padding: 3px 15px 3px 15px;
+          width: 35%;
+          display: flex;
+          justify-content: center;
+        }
+
+      </style>
+
+          <?php
+
+            if($_GET['module']!=""){
+                $_SESSION['module'] = $_GET['module'];
+            }
+
+            if($_SESSION['module']==""){
+                $_SESSION['module'] = "mfootball";
+            }
+          ?>
+
+      <div id="menu-bar-droparrow-nikola">
+        <button class="dropdown-toggle dropdown-button-nikola" id="navbarDarkDropdownMenuLink" role="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <span id="spanCountMODULE">MODULE</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-board-nikola" id="dropdown-menu-ul-nikola"
+          aria-labelledby="navbarDarkDropdownMenuLink">
+          <li><i class="fa-sharp fa-solid fa-futbol"></i>
+            <button class="dropdown-item">Football</button>
+            <div class="dropdown-item dropdown-item-right-nikola">
+              <span id="spanCountFootballLive">-</span>/
+              <span id="spanCountFootballAll">-</span>
+            </div>
+          </li>
+          <li><i class="fa-solid fa-basketball"></i>
+            <button class="dropdown-item">Basketball</button>
+            <div class="dropdown-item dropdown-item-right-nikola">
+              <span id="spanCountBasketballLive">-</span>/
+              <span id="spanCountBasketballAll">-</span>
+            </div>
+          </li>
+          <li><i class="fa-sharp fa-solid fa-horse-head"></i>
+            <button class="dropdown-item">Horse</button>
+            <div class="dropdown-item dropdown-item-right-nikola">
+              <span id="spanCountHorseLive">-</span>/
+              <span id="spanCountHorseAll">-</span>
+            </div>
+          </li>
+          <li><i class="fa-solid fa-gamepad"></i>
+            <button class="dropdown-item">Esport</button>
+            <div class="dropdown-item dropdown-item-right-nikola">
+              <span id="spanCountEsportLive">-</span>/
+              <span id="spanCountEsportAll">-</span>
+            </div>
+          </li>
+          <li><i class="fa-solid fa-hands-helping"></i>
+            <button class="dropdown-item">Guide</button>
+          </li>
+          <li><i class="fa-solid fa-newspaper"></i>
+            <button class="dropdown-item">News</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="logo">
+        <img src="/includes/mvc-theme/mobile/<?=$infoOrganization->organization_domain?>/images/brand-logo.png" />
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+      
+      <script>
+        function sleep(ms) {
+          return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        $("#navbarDarkDropdownMenuLink").on("click", function () {
+          console.log("122");
+          var classList = $('#menu-bar-droparrow-nikola').attr('class').split(/\s+/);
+          $.each(classList, function (index, item) {
+            if (item === 'dropdown') {
+              $("#menu-bar-droparrow-nikola").removeClass("dropdown");
+              $("#menu-bar-droparrow-nikola").addClass("dropstart");
+              sleep(100).then(() => { 
+                $("#menu-bar-droparrow-nikola").removeClass("dropstart");
+                $("#menu-bar-droparrow-nikola").addClass("dropup");
+              });
+              // $("#dropdown-menu-ul-nikola").fadeIn();
+              $("li:first-child").css("background-color", "#2B2B2B");
+              $("body").css("background-color", "lightgrey");
+            } else {
+              $("#menu-bar-droparrow-nikola").removeClass("dropup");
+              $("#menu-bar-droparrow-nikola").addClass("dropdown");$("#menu-bar-droparrow-nikola").addClass("dropstart");
+              sleep(100).then(() => { 
+                $("#menu-bar-droparrow-nikola").removeClass("dropstart");
+                $("#menu-bar-droparrow-nikola").addClass("dropdown");
+              });
+              // $("#dropdown-menu-ul-nikola").fadeOut();
+              $("body").css("background-color", "white");
+            }
+          });
+        });
+      </script>
+
+
+
+
+      <script>
+        $('#spanCountMODULE').html("<?=substr($_SESSION['module'],1,strlen($_SESSION['module'])-1)?>");
+        $('#spanCountFootballLive').html("(1)");
+        $('#spanCountFootballAll').html("(111)");
+        $('#spanCountBasketballLive').html("(2)");
+        $('#spanCountBasketballAll').html("(222)");
+        $('#spanCountHorseLive').html("(3)");
+        $('#spanCountHorseAll').html("(333)");
+        $('#spanCountEsportLive').html("(4)");
+        $('#spanCountEsportAll').html("(444)");
+      </script>
+
+
+
+
+    </div>
+
+
+    <!-- CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN -->
+    <!-- CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN -->
+    <!-- CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN -->
+    <div class="panel_main">
