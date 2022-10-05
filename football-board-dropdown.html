@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mFootball-header-dropdown</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+
+<body>
+  <style>
+    :root {
+      --left: -140px;
+      --top: 70px;
+    }
+
+    .menu-bar-nikola {
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    #dropdown-menu-ul-nikola {
+      background-color: white;
+      transform: translate(var(--left), var(--top)) !important;
+      width: 440px !important;
+      padding: 15px 5px 15px 5px;
+      border-radius: 8px;
+    }
+
+    #dropdown-menu-ul-nikola>li {
+      background-color: #5A5A5A;
+      border-radius: 5px;
+      margin: 3px 10px 3px 10px;
+      display: flex;
+      align-items: center;
+      height: 60px;
+    }
+
+    #dropdown-menu-ul-nikola>li>* {
+      pointer-events: none;
+    }
+
+    #dropdown-menu-ul-nikola>li>img {
+      width: 15% !important;
+      height: 60% !important;
+      margin-left: 5px;
+    }
+
+    #dropdown-menu-ul-nikola>li>button {
+      text-transform: uppercase;
+      color: white !important;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    #dropdown-menu-ul-nikola>li>div {
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    #dropdown-menu-ul-nikola>li>div :first-child {
+      color: #cf4e52;
+    }
+
+    .dropdown-button-nikola {
+      background-color: transparent;
+      border-color: white;
+      border-width: 0.5px;
+      color: white;
+      border-radius: 5px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-weight: 650;
+      font-size: 21px;
+      padding: 2px 20px 2px 20px;
+      border-width: thin;
+      border-color: lightgray;
+    }
+
+    .dropdown-menu-board-nikola {
+      background-color: white;
+    }
+
+    .dropdown-item-right-nikola {
+      background-color: #ADABAC;
+      border-radius: 10px;
+      margin: 3px 15px 3px 15px;
+      padding: 3px 15px 3px 15px;
+      width: 35%;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+
+
+  <div class="menu-bar-nikola">
+    <div>ddd</div>
+    <div class="dropdown" id="menu-bar-droparrow-nikoa">
+      <button class="dropdown-toggle dropdown-button-nikola" id="navbarDarkDropdownMenuLink" role="button"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        Football
+      </button>
+      <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-board-nikola" id="dropdown-menu-ul-nikola"
+        aria-labelledby="navbarDarkDropdownMenuLink">
+        <li><img class="dropdown-item" src="./assets/images/logo.png" /><button class="dropdown-item">Football</button>
+          <div class="dropdown-item dropdown-item-right-nikola"><span>9</span>/<span>255</span></div>
+        </li>
+        <li><img class="dropdown-item" src="./assets/images/logo.png" /><button
+            class="dropdown-item">Basketball</button>
+          <div class="dropdown-item dropdown-item-right-nikola"><span>51</span>/<span>45</span></div>
+        </li>
+        <li><img class="dropdown-item" src="./assets/images/logo.png" /><button class="dropdown-item">Horse</button>
+          <div class="dropdown-item dropdown-item-right-nikola"><span>0</span>/<span>0</span></div>
+        </li>
+        <li><img class="dropdown-item" src="./assets/images/logo.png" /><button class="dropdown-item">Esport</button>
+          <div class="dropdown-item dropdown-item-right-nikola"><span>2</span>/<span>35</span></div>
+        </li>
+        <li><img class="dropdown-item" src="./assets/images/logo.png" /><button class="dropdown-item">Guide</button>
+          <div class="dropdown-item dropdown-item-right-nikola"><span>0</span>/<span>0</span></div>
+        </li>
+        <li><img class="dropdown-item" src="./assets/images/logo.png" /><button class="dropdown-item">News</button>
+          <div class="dropdown-item dropdown-item-right-nikola"><span>0</span>/<span>0</span></div>
+        </li>
+      </ul>
+    </div>
+    <div>ddd</div>
+  </div>
+
+  <script>
+    $("#navbarDarkDropdownMenuLink").on("click", function () {
+      // let widthBtn = $('#menu-bar-droparrow-nikoa').width();
+      // let heightBtn = $('#menu-bar-droparrow-nikoa').height();
+      // let widthUl = $('#dropdown-menu-ul-nikola').width();
+      // $(':root').css("width", `${(widthBtn-widthUl)/2}px`);
+      // $(':root').css("height", `${heightBtn+10}px`);
+      var classList = $('#menu-bar-droparrow-nikoa').attr('class').split(/\s+/);
+      $.each(classList, function (index, item) {
+        if (item === 'dropdown') {
+          $("#menu-bar-droparrow-nikoa").removeClass("dropdown");
+          $("#menu-bar-droparrow-nikoa").addClass("dropup");
+          // $("#dropdown-menu-ul-nikola").fadeIn();
+          $("li:first-child").css("background-color", "#2B2B2B");
+          $("body").css("background-color", "lightgrey");
+        } else {
+          $("#menu-bar-droparrow-nikoa").removeClass("dropup");
+          $("#menu-bar-droparrow-nikoa").addClass("dropdown");
+          // $("#dropdown-menu-ul-nikola").fadeOut();
+          $("body").css("background-color", "white");
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
